@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <title>Ying Zhou · Documentary Film Producer &amp; Journalist</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:300|Reenie+Beanie" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: inherit;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 10px;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.4;
+      }
+
+      body {
+        font-size: 2em;
+      }
+
+      @media (max-width: 700px) {
+        body {
+          font-size: 3vw;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 1.5em;
+        }
+      }
+
+      a:focus:not(:hover) {
+        outline: 1px dotted;
+      }
+
+      .surface {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 12px;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 2em;
+        margin-bottom: .15em;
+      }
+
+      .title {
+        font-size: 1em;
+        margin-bottom: 1rem;
+      }
+
+      .cursive {
+        font-family: 'Reenie Beanie', cursive;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .footer-nav {
+        font-size: .9em;
+        display: flex;
+      }
+
+      .footer-nav a {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+        padding: .5em .7em;
+      }
+
+      .footer-nav a:not(:last-child)::after {
+        position: absolute;
+        content: "·";
+        left: 100%;
+        width: 0;
+        margin-left: -2px;
+      }
+
+      .footer-copyright {
+        font-size: 1.125em;
+      }
+
+      .column {
+        padding: 2em 0;
+        width: 640px;
+        max-width: 100%;
+      }
+
+      .video {
+        position: relative;
+        height: 0;
+      }
+
+      .video-16-by-9 {
+        padding-bottom: 56.25%;
+      }
+
+      .video > iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="surface">
+      <h1>Ying Zhou</h1>
+      <div class="title">Documentary Film Producer &amp; Journalist</div>
+
+      <div class="column">
+        <div class="video video-16-by-9">
+          <iframe src="https://player.vimeo.com/video/259992879?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-nav">
+          <a href="https://twitter.com/yingf22">Twitter</a>
+          <a href="https://www.instagram.com/yingf22/">Instagram</a>
+          <a href="https://vimeo.com/user80834253">Vimeo</a>
+          <a href="ying-zhou-resume.pdf">Resumé</a>
+        </div>
+
+        <div class="footer-copyright cursive">
+          &copy;<span data-js-textContent="currentYear"></span> Ying Zhou
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const scope = {}
+      scope.currentYear = (new Date()).getFullYear()
+
+      Array.prototype.forEach.call(document.querySelectorAll('[data-js-textContent]'), (el) => {
+        el.textContent = scope[el.getAttribute('data-js-textContent')]
+      })
+    </script>
+  </body>
+</html>
