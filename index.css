@@ -106,6 +106,8 @@ h2 {
   margin-top: 1.5em;
   font-size: .75em;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .videos-filter a {
@@ -115,11 +117,17 @@ h2 {
   padding: .25em .6em .2em;
   font-weight: 900;
   border-radius: 999em;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .videos-filter a.is-active {
   background: #000;
   color: #fff;
+}
+
+.video-list {
+  max-width: 100%;
 }
 
 .video-list-item {
