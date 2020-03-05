@@ -193,6 +193,10 @@ h2 {
   margin-bottom: 0;
 }
 
+.column .leading-quote {
+  text-indent: -.5em;
+}
+
 .video {
   position: relative;
   height: 0;
